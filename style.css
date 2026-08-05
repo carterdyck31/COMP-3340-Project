@@ -1,0 +1,122 @@
+/* basic reset and global layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: snow;
+    padding-bottom: 20px;
+}
+
+/* top navigation bar styling */
+.nav-bar {
+    background-color: saddlebrown;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* color fades in and out real nice */
+}
+
+.nav-bar a:hover {
+    background-color: chocolate;
+}
+
+.nav-bar a.active {
+    background-color: coral;
+}
+
+/* hero section */
+.hero {
+    background-color: wheat;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    color: darkslategrey;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: coral;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: chocolate;
+}
+
+/* main content container */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.featured-section {
+    text-align: center;
+}
+
+.featured-section h2 {
+    color: darkslategrey;
+    margin-bottom: 10px;
+}
+
+/* grid for treat cards */
+.treat-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.treat-card {
+    background: white;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+.treat-card h3 {
+    color: saddlebrown;
+    margin-bottom: 10px;
+}
+
+/* page footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid lightgrey;
+    font-size: 0.9rem;
+    color: dimgrey;
+}
